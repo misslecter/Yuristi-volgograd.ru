@@ -1,0 +1,31 @@
+#mob-menu {
+  padding: 0;
+  margin-top: 40px;
+  margin-bottom: -20px;
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    li {
+      padding: 0;
+      border-bottom: 1px solid #B1BDCD;
+      a {
+        padding: 20px;
+        color: #fff;
+        display: block;
+        font-size: medium;
+      }
+      &:last-child {
+        border-bottom: none;
+      }
+      &:hover, &:active, &:focus {
+        a {
+          background: lighten($color, 10%);
+          text-decoration: none;
+          font-weight: bold;
+          color: #fff;
+        }
+      }
+    }
+  }
+}

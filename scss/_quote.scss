@@ -1,0 +1,61 @@
+#consult {
+  background: #fff;
+  padding-top: 180px;
+  padding-left: 0;
+  padding-right: 0;
+}
+.quote {
+  position: relative;
+  border-top: 10px solid lighten($color, 10%);
+  padding: 160px 0 60px;
+  text-align: center;
+  background: $color url(../images/dark-leather.png) repeat top left;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+  .thumb {
+    background: #e5e5e5;
+    color: $color;
+
+    font-size: 22px;
+
+    line-height: 240px;
+    padding-top: 20px;
+    padding-left: 10px;
+    text-align: center;
+
+    display: block;
+    width: 240px;
+    height: 240px;
+    border: 10px solid rgba(255,255,255,0.5);
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: -120px;
+    margin: 0 0 0 -120px;
+    box-shadow: inset 1px 1px 4px rgba(0,0,0,0.5), 0 2px 3px rgba(0,0,0,0.6);
+  }
+}
+.blockquote {
+  padding: 0 180px;
+  color: #fff;
+  font-size: 20px;
+  font-family: $additional-font;
+  &:before,
+  &:after {
+    font-family: $additional-font;
+    position: absolute;
+    font-size: 240px;
+    top: -40px;
+    color: rgba(76, 112, 186, 0.5);
+    text-shadow: 0 1px 1px rgba(255,255,255,0.1);
+  }
+
+  &:before{
+    left: 40px;
+    content: '“';
+  }
+
+  &:after{
+    right: 40px;
+    content: '”';
+  }
+}

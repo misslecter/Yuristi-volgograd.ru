@@ -1,0 +1,36 @@
+.practice {
+  .practice-item {
+    color: #fff;
+    border-radius: 320px;
+    text-align: center;
+    width: 220px;
+    height: 220px;
+    margin: auto;
+    font-size: 16px;
+    padding: 40px 50px;
+
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    opacity: 0;
+
+    &.item-1 {
+      background-color: lighten($color, 10%);
+      @include transition(opacity 1s ease-in-out);
+    }
+    &.item-2 {
+      background-color: $color;
+      @include transition(opacity 1s ease-in-out .5s);
+    }
+    &.item-3 {
+      background-color: darken($color, 5%);
+      @include transition(opacity 1s ease-in-out 1s);
+    }
+
+    .count {
+      font-family: $additional-font;
+      font-size: 52px;
+      margin-bottom: 10px;
+    }
+  }
+}

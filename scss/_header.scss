@@ -1,0 +1,95 @@
+.header {
+  .header-info {
+    overflow: hidden;
+    background-color: #fff;
+    padding: 60px 0 40px;
+    .logo {
+      i {
+        color: $color;
+        position: relative;
+        top: -10px;
+      }
+      .company-name {
+        display: inline-block;
+        padding-left: 20px;
+        .desc {
+          font-style: italic;
+        }
+        a {
+          font-size: 36px;
+          font-family: $additional-font;
+          color: #000;
+          &:hover, &:active, &:focus {
+            text-decoration: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .tel {
+      text-align: right;
+      a {
+        color: $color;
+        font-size: 24px;
+        font-weight: bold;
+        display: block;
+        &:hover, &:active, &:focus {
+          text-decoration: none;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .menu {
+    background-color: $color;
+    width: $container-lg + 40px;
+    margin: auto;
+    position: relative;
+    &::after, &::before {
+      content: "";
+      width: 0;
+      height: 0;
+      border-style: solid;
+      position: absolute;
+    }
+    &::after {
+      right: 0;
+      border-width: 20px 20px 0 0;
+      border-color: darken($color, 10%) transparent transparent transparent;
+    }
+    &::before {
+      bottom: -20px;
+      border-width: 0 20px 20px 0;
+      border-color: transparent darken($color, 10%) transparent transparent;
+    }
+    .container {
+      padding: 0;
+      background: transparent;
+    }
+    li {
+      padding: 0;
+      a {
+        color: #fff;
+        padding: 15px 0;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        &:hover, &:active, &:focus {
+          color: #fff;
+          background-color: transparent;
+          -webkit-transition: all 0.25s ease;
+          transition: all 0.25s ease;
+        }
+      }
+      &.consult {
+        background-color: lighten($color, 10%);
+        a {
+          font-weight: bold;
+        }
+      }
+      &:hover, &:active, &:focus {
+        background-color: darken($color, 10%);
+        cursor: pointer;
+      }
+    }
+  }
+}

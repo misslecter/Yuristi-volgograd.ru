@@ -1,0 +1,11 @@
+.footer {
+  padding: 40px 40px 60px;
+  background-color: darken($color, 10%);
+  color: #fff;
+  .info {
+    text-align: right;
+  }
+  .container {
+    background-color: transparent;
+  }
+}

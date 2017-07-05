@@ -1,0 +1,30 @@
+.offline {
+    height: 100%;
+}
+body {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #dbdbdb;
+    margin: 0;
+}
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+a {
+    color: #10386b;
+    border-bottom: 1px solid;
+    text-decoration: none;
+}
+a:hover {
+    border-bottom: none;
+}
+.copyright {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+}

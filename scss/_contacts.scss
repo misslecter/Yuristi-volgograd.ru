@@ -1,0 +1,146 @@
+.contact {
+  padding-bottom: 120px;
+  p {
+    text-align: center;
+  }
+  .address-note {
+    margin-left: 30px;
+  }
+  .link {
+    color: $color;
+    &:hover, &:focus, &:active {
+      color: $color;
+    }
+  }
+  .form-group {
+    margin-bottom: 35px;
+  }
+  .radios {
+    padding-left: 20px;
+    margin-bottom: 0;
+    label {
+      padding-bottom: 15px;
+      margin-bottom: 0;
+    }
+  }
+  .input-bizcons {
+    position: relative;
+    span {
+      position: absolute;
+      padding-top: 22px;
+      padding-left: 10px;
+      visibility: hidden;
+      color: $second-color;
+      @include transition(padding-left .5s ease-out);
+    }
+    input, textarea {
+      border-radius: 0;
+      border-top:none;
+      border-left:none;
+      border-right:none;
+      border-bottom:2px solid #ccc;
+      box-shadow: none;
+      padding: 0 20px;
+      height: 62px;
+      background-color: transparent;
+      @include transition(padding .5s ease-out);
+      &:focus, &:active {
+        box-shadow: none;
+        border-color: $second-color;
+      }
+    }
+    textarea {
+      padding: 20px;
+      height: auto;
+    }
+  }
+  /* Base for label styling */
+  [type="radio"]:not(:checked),
+  [type="radio"]:checked {
+    position: absolute;
+    left: -9999px;
+  }
+  [type="radio"]:not(:checked) + label,
+  [type="radio"]:checked + label {
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    margin: 0;
+  }
+  /* radio aspect */
+  [type="radio"]:not(:checked) + label:before,
+  [type="radio"]:checked + label:before {
+    content: '';
+    position: absolute;
+    left:0; top: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    border-radius: 25px;
+  }
+  /* radio mark aspect */
+  [type="radio"]:not(:checked) + label:after,
+  [type="radio"]:checked + label:after {
+    content: " ";
+    background-color: #fff;
+    border: 6px solid $second-color;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 25px;
+    transition: all .2s;
+  }
+  /* checked mark aspect changes */
+  [type="radio"]:not(:checked) + label:after {
+    opacity: 0;
+    transform: scale(0);
+  }
+  [type="radio"]:checked + label:after {
+    opacity: 1;
+    transform: scale(1);
+  }
+  form {
+    position: relative;
+    margin-top: 40px;
+  }
+  .send-btn {
+    position: absolute;
+    bottom: 0;
+    right:0;
+    button {
+      width: 100%;
+    }
+  }
+  .info {
+    margin-bottom: 40px;
+    line-height: 2;
+    p {
+      text-align: left;
+    }
+    .title {
+      padding: 20px 0 10px;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+      span {
+        color: $second-color;
+        margin-right: 10px;
+        font-size: 18px;
+        position: relative;
+        top: 4px;
+      }
+    }
+  }
+  #map {
+    width: 100%;
+    height: 490px;
+  }
+  .g-recaptcha {
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+}

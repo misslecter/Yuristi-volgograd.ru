@@ -1,0 +1,110 @@
+// Mobile + tablet
+@media (max-width: $screen-sm-max) {
+  h3 {
+    font-size: 20px;
+  }
+ .services {
+   .other > ul {
+     li {
+       text-align: left;
+     }
+   }
+   .teaser {
+     width: 100%;
+     padding: 20px;
+     text-align: center;
+     .button {
+       padding: 20px;
+       float: none;
+     }
+   }
+ }
+  .quote {
+    .blockquote {
+      padding: 0 20px;
+      &:before,
+      &:after {
+        display: none;
+      }
+    }
+  }
+  .contact {
+    .address-note {
+      margin-left: 0;
+    }
+    .send-btn {
+      position: relative;
+      margin-top: 40px;
+    }
+  }
+  .footer {
+    padding: 20px 0 60px;
+    .pull-right {
+      text-align: left;
+    }
+  }
+}
+// Mobile only
+@media (max-width: $screen-xs-max) {
+  .teaser {
+    h3 {
+      margin-top: 0;
+    }
+  }
+}
+// Tablet only
+@media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+  .mobile-header {
+    .menu-label {
+      font-size: 22px !important;
+    }
+    button {
+      top:0 !important;
+    }
+  }
+  .mob-header-content {
+    .contact {
+      padding-top: 40px;
+      a {
+        font-size: 18px !important;
+      }
+    }
+  }
+}
+// 1024
+@media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+  .header {
+    .logo > .company-name > a {
+      font-size: 28px !important;
+    }
+    .menu {
+      width: auto !important;
+      li {
+        a {
+          position: relative;
+          top:10px;
+        }
+        &.consult {
+          a {
+            padding: 15px 0;
+            top:0;
+          }
+        }
+      }
+    }
+  }
+  .services {
+    .teaser {
+      .button {
+        padding: 0 20px;
+      }
+    }
+  }
+}
+// Md + lg
+@media (min-width: $screen-md-min) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}

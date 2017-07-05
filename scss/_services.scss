@@ -1,0 +1,68 @@
+.services {
+  #grazhdane, #organizacii {
+    position: relative;
+    span {
+      position: absolute;
+      font-size: 160px;
+      color: #ccc;
+      opacity: .5;
+      -webkit-transition: opacity 0.1s;
+      transition: opacity 0.1s;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+    }
+    &:hover {
+      span {
+        opacity: .8;
+      }
+    }
+  }
+  .before {
+    font-size: 16px;
+    text-align: center;
+  }
+  #grazhdane {
+    padding-right: 20px;
+  }
+  #organizacii {
+    padding-left: 20px;
+  }
+  .other {
+    border-top: 1px solid #000;
+    margin-top: 20px;
+    padding-top: 20px;
+    ul > li {
+      text-align: center;
+    }
+  }
+  ul {
+    list-style: none;
+    line-height: 2;
+    padding-left: 20px;
+    position: relative;
+    z-index: 1;
+    li {
+      &::before {
+        content: "●";
+        color: $color;
+        margin-right: 5px;
+      }
+    }
+  }
+  .teaser {
+    background-color: #f3f3f3;
+    padding: 20px 30px;
+    margin-top: 40px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    h3 {
+      float: left;
+    }
+    .button {
+      margin-top: 5px;
+    }
+  }
+}
