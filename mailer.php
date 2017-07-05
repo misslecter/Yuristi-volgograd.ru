@@ -16,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Set the recipient email address.
     // FIXME: Update this to your desired email address.
-    $recipient = "surikova.anastasia@gmail.com";
+    $recipient = "info@yuristi-volgograd.ru";
 
     // Set the email subject.
     $subject = "Новый запрос с сайта YURISTI-VOLGOGRAD.RU";
